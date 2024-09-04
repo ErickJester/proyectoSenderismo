@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Senderismo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EDE7D5;
+            color: #545454;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #7B8A84;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .event-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .event-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .event-details {
+            padding: 15px;
+        }
+
+        .event-details h2 {
+            color: #8CBFAF;
+            margin-top: 0;
+        }
+
+        .event-details p {
+            margin: 10px 0;
+        }
+
+        .event-info {
+            margin-top: 10px;
+            color: #545454;
+        }
+
+        .event-info span {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .event-details button {
+            background-color: #B7CC18;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .event-details button:hover {
+            background-color: #7B8A84;
+        }
+
+        .shop-button {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .shop-button button {
+            background-color: #545454;
+            border: none;
+            color: white;
+            padding: 10px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .shop-button button:hover {
+            background-color: #7B8A84;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eventos de Senderismo programados</h1>
+    </header>
+
+    <div class="container">
+        <!-- Evento 1 -->
+        <div class="event-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4KrwEe8zGy2NWbL_WmyDT50CjGLea87sPWA&s" alt="">
+            <div class="event-details">
+                <h2>Senderismo en Grupo</h2>
+                <p>Únete a nosotros para una experiencia inolvidable en grupo por nuestras rutas más espectaculares.</p>
+                <div class="event-info">
+                    <span><strong>Fecha:</strong> 15 de Septiembre, 2024</span>
+                    <span><strong>Hora:</strong> 8:00 AM</span>
+                    <span><strong>Participantes Inscritos:</strong> 20</span>
+                    <span><strong>Lugares Disponibles:</strong> 10</span>
+                    <span><strong>Lugar:</strong> Montañas del Norte</span>
+                    <span><strong>Ruta:</strong> Ruta del Águila</span>
+                </div>
+                <button>Inscribirse</button>
+            </div>
+        </div>
+
+        <!-- Evento 2 -->
+        <div class="event-card">
+            <img src="https://www.lourdes-infotourisme.com/app/uploads/lourdes/2021/09/thumbs/pic-du-jer-vue-pyrenees-bdp-vincent-ot-lourdes-2015-640x1024-crop-1632730901.jpg" alt="">
+            <div class="event-details">
+                <h2>Senderismo en Familia</h2>
+                <p>Disfruta de una caminata relajante con tu familia en un entorno natural seguro y agradable.</p>
+                <div class="event-info">
+                    <span><strong>Fecha:</strong> 22 de Septiembre, 2024</span>
+                    <span><strong>Hora:</strong> 9:00 AM</span>
+                    <span><strong>Participantes Inscritos:</strong> 15</span>
+                    <span><strong>Lugares Disponibles:</strong> 15</span>
+                    <span><strong>Lugar:</strong> Bosque Encantado</span>
+                    <span><strong>Ruta:</strong> Sendero Familiar</span>
+                </div>
+                <button>Inscribirse</button>
+            </div>
+        </div>
+
+        <!-- Evento 3 -->
+        <div class="event-card">
+            <img src="https://lestresorsderable.com/img/cms/Les%20randonnees%20en%20montagne%20au%20Canada.jpg" alt="">
+            <div class="event-details">
+                <h2>Senderismo Individual con Guía</h2>
+                <p>Explora las rutas a tu propio ritmo acompañado de un guía experto que te mostrará los mejores paisajes.</p>
+                <div class="event-info">
+                    <span><strong>Fecha:</strong> 29 de Septiembre, 2024</span>
+                    <span><strong>Hora:</strong> 7:00 AM</span>
+                    <span><strong>Participantes Inscritos:</strong> 5</span>
+                    <span><strong>Lugares Disponibles:</strong> 5</span>
+                    <span><strong>Lugar:</strong> Sierra del Sol</span>
+                    <span><strong>Ruta:</strong> Camino del Guerrero</span>
+                </div>
+                <button>Inscribirse</button>
+            </div>
+        </div>
+
+        <!-- Botón hacia la tienda -->
+        <div class="shop-button">
+            <button onclick="window.location.href='tienda.html'">Visitar Tienda de Equipamiento</button>
+        </div>
+    </div>
+</body>
+</html>
