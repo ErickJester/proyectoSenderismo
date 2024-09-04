@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Página web para servicios de senderismo, ofreciendo información sobre rutas, instalaciones, condiciones climáticas, y más.">
+        <title>Servicios de Senderismo</title>
+        <link rel="stylesheet" href="styleRuta.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="ruta_del_logo.png" alt="Logotipo de la página" />
+        </header>
+        <div class="menu-dropdown">
+            <button class="menu-button">☰ Menú</button>
+            <div class="menu-content">
+                <a href="#inicio">Inicio</a>
+                <a href="#consejos">Consejos</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#conocemos">Conocemos</a>
+                <a href="#tienda">Tienda</a>
+            </div>
+        </div>
+        
+        <!-- Sección del nombre de la ruta y detalles -->
+        <section class="ruta-header">
+            <h1>Pico del Águila</h1>
+            <hr>
+            <div class="ruta-detalles">
+                <div class="detalle-item">
+                    <i class="fas fa-star"></i> <!-- Icono de estrella para la calificación -->
+                    <span>⭐ 4.7</span>
+                </div>
+                <div class="detalle-item">
+                    <i class="fas fa-map-marker-alt"></i> <!-- Icono de distancia -->
+                    <span>4.2 km Distancia</span>
+                </div>
+                <div class="detalle-item">
+                    <i class="fas fa-mountain"></i> <!-- Icono de desnivel -->
+                    <span>693 m Desnivel positivo</span>
+                </div>
+                <div class="detalle-item">
+                    <i class="fas fa-exchange-alt"></i> <!-- Icono de ida y vuelta -->
+                    <span>Ida y vuelta</span>
+                </div>
+            </div>
+            
+
+            <img id="rutaMapa" src="ejemploMapa.png" alt="Vista de Pico del Águila">
+        </section>
+        
+        <!-- Resumen de la ruta -->
+        <section class="resumen">
+            <h2>Resumen de la ruta</h2>
+            <p>Este pico es icónico de la Ciudad de México y el Ajusco, y si intentas sola una ruta del parque, debe que ser esta. Te lleva a la segunda cumbre más alta de la CDMX...</p>
+            <button class="btn-como-llegar">Cómo llegar</button>
+            <button class="btn-consejos">Consejos</button>
+        </section>
+        <!-- Clima -->
+        <section id="clima">
+            <h2>Pronóstico del Clima</h2>
+            <div class="weather-container">
+                <div class="days-of-week">
+                    <div class="day selected" data-day="1">
+                        <p>lun</p>
+                        <p>2</p>
+                    </div>
+                    <div class="day" data-day="2">
+                        <p>mar</p>
+                        <p>3</p>
+                    </div>
+                    <div class="day" data-day="3">
+                        <p>mié</p>
+                        <p>4</p>
+                    </div>
+                    <div class="day" data-day="4">
+                        <p>jue</p>
+                        <p>5</p>
+                    </div>
+                    <div class="day" data-day="5">
+                        <p>vie</p>
+                        <p>6</p>
+                    </div>
+                    <div class="day" data-day="6">
+                        <p>sáb</p>
+                        <p>7</p>
+                    </div>
+                    <div class="day" data-day="7">
+                        <p>dom</p>
+                        <p>8</p>
+                    </div>
+                </div>
+
+                <div class="weather-info">
+                    <h2>14°</h2>
+                    <img src="nublado.png" alt="Icono de clima">
+                    <p>Tormentas. Máx.: 18° Min.: 10°</p>
+                    <div class="additional-info">
+                        <p>🌅 06:21 🌇 18:50 💧 89%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de consejos y cómo llegar se podrían expandir aquí -->
+
+        <footer>
+            <p><a href="politica-privacidad.html">Política de Privacidad</a> | <a href="contacto.html">Contacto</a></p>
+        </footer>
+
+    </body>
+
+</html>
