@@ -1,0 +1,182 @@
+/* Reseteo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #EDE7D5;
+    color: #545454;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: #7B8A84;
+    z-index: 100;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #8CBFAF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #B7CC18;
+}
+
+/* Banner Conócenos */
+.conocenos-banner {
+    width: 100%;
+    height: 400px;
+    background-image: url(../IMAGEN/conocenos-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.info {
+    z-index: 1;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 600px;
+}
+
+.info h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Sección Historia */
+.historia {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.historia h2 {
+    font-size: 36px;
+    color: #2E4A21;
+    margin-bottom: 20px;
+}
+
+.historia p {
+    font-size: 18px;
+    color: #545454;
+    line-height: 1.8;
+}
+
+/* Misión y Visión */
+.mision-vision {
+    display: flex;
+    justify-content: space-around;
+    background-color: #7B8A84;
+    color: #FFFFFF;
+    padding: 40px 20px;
+}
+
+.mision, .vision {
+    width: 45%;
+}
+
+.mision h3, .vision h3 {
+    font-size: 28px;
+    color: #B7CC18;
+    margin-bottom: 15px;
+}
+
+.mision p, .vision p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Sección Equipo */
+.equipo {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #EDE7D5;
+}
+
+.equipo h2 {
+    font-size: 36px;
+    color: #2E4A21;
+    margin-bottom: 20px;
+}
+
+.miembros {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.miembro {
+    width: 250px;
+    text-align: center;
+}
+
+.miembro img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.miembro h4 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #545454;
+}
+
+.miembro p {
+    font-size: 18px;
+    color: #7B8A84;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #7B8A84;
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #B7CC18;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

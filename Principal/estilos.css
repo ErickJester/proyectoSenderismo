@@ -1,37 +1,44 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.banner{
+
+body {
+    background-color: #EDE7D5; /* Color de fondo */
+}
+
+.banner {
     width: 100%;
     height: 600px;
     animation: banner 10s infinite linear alternate;
-    background-size:  100% 100%;
+    background-size: 100% 100%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@keyframes banner{
-    0%, 20%{
-        background-image: url(../IMAGEN/senderismo1.jpg)
+
+@keyframes banner {
+    0%, 20% {
+        background-image: url(IMAGEN/ruta1.jpg);
     }
-    21%, 40%{
-        background-image: url(../IMAGEN/senderismo2.jpg)
+    21%, 40% {
+        background-image: url(IMAGEN/senderismo2.jpg);
     }
-    41%, 60%{
-        background-image: url(../IMAGEN/senderismo3.jpg)
+    41%, 60% {
+        background-image: url(IMAGEN/ruta2.jpg);
     }
-    61%, 80%{
-        background-image: url(../IMAGEN/senderismo4.jpg)
+    61%, 80% {
+        background-image: url(IMAGEN/senderismo4.jpg);
     }
-    81%, 100%{
-        background-image: url(../IMAGEN/senderismo5.jpg)
+    81%, 100% {
+        background-image: url(IMAGEN/senderismo5.jpg);
     }
 }
-.capa{
+
+.capa {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -39,39 +46,157 @@
     left: 0;
     background: rgba(0, 0, 0, 0.6);
 }
-.info{
+
+.info {
     z-index: 1;
     width: 100%;
     max-width: 550px;
     text-align: center;
 }
-.navbar {
-    z-index: 1;
-    position: absolute;
-    top: 20px;
-    right: 0; 
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px; 
-    padding-right: 20px;
-}
 
-.info h1{
-    color: #fff;
+.info h1 {
+    color: #FFFFFF;
     font-size: 45px;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
-.info p{
-    color: #c7c7c7;
+
+.info p {
+    color: #EDE7D5; /* Color claro en el texto de la bienvenida */
     line-height: 1.7;
     margin-bottom: 30px;
 }
-.info a{
-    color: #fff;
+
+.info a {
+    color: #FFFFFF;
     text-decoration: none;
-    background: #3088e0;
+    background: #8CBFAF; /* Color de los botones */
     padding: 16px 37px;
     display: inline-block;
     border-radius: 50px;
+}
+
+.info a:hover {
+    background-color: #B7CC18; /* Botones al hacer hover */
+}
+
+/* Ajuste del navbar */
+.navbar {
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFFFFF; /* Mantén el color blanco del texto */
+    background-color: #8CBFAF; /* Color de fondo más resaltado */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; /* Añadimos la transición */
+}
+
+.navbar a:hover {
+    background-color: #B7CC18; /* Cambia a verde cuando pases el cursor */
+    transform: scale(1.1); /* Añade un ligero aumento al pasar el cursor */
+    color: #FFFFFF; /* Mantén el color del texto blanco al hacer hover */
+}
+
+
+.titulo-rutas {
+    margin-top: 50px;
+    text-align: center;
+    color: #545454; /* Título de la sección de rutas */
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.ruta {
+    background-color: #7B8A84; /* Fondo de las rutas */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.ruta:hover {
+    transform: scale(1.05);
+}
+
+.ruta img {
+    width: 100%;
+    height: auto;
+}
+
+.ruta h4 {
+    margin: 15px 0;
+    font-size: 24px;
+    color: #EDE7D5; /* Título de la ruta */
+}
+
+.ruta p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #B7CC18; /* Precio y duración */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #FFFFFF;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h4 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #545454;
+}
+
+.modal-content p {
+    font-size: 18px;
+    color: #7B8A84;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
 }
